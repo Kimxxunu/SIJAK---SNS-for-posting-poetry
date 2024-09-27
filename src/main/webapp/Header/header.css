@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+.Footer {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid gainsboro;
+    position : sticky;
+    bottom:0;
+    z-index: 10;
+    background-color: white;
+
+}
+
+.Footer-Wrap {
+    width: 94%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer-Wrap-Home, .Footer-Wrap-Hot, .Footer-Wrap-BoardWrite, .Footer-Wrap-BoardWrite-MyLike, .Footer-Wrap-BoardWrite-Login, .Footer-Wrap-BoardWrite-Proflie {
+    width: 14%;
+    align-content: center;
+}
+
+.menu-icon {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.menu-icon img {
+    width: 50%;
+}
+
+#login-key {
+    width: 65%;
+}

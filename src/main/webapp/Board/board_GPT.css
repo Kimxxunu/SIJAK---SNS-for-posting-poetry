@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+.Board_GPT_Page {
+    width: 100vw;
+}
+
+.Board_GPT_Page-Header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Board_GPT_Page-Header p {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.Board_GPT_Page-Body {
+    width: 100%;
+    border-top: 1px solid gainsboro;
+    display: flex;
+    justify-content: center;
+}
+
+.Board_GPT_Page-Body-Form {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Board_GPT_Page-Body-Form-content {
+    margin-top: 30px;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    font-size: 17px;
+    border: 1px solid gainsboro;
+    overflow-y: auto;
+}
+
+#chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.Board_GPT_Page-Body-Form-content:focus {
+    outline: none;
+}
+
+.Board_GPT_Page-Body-Form-InputMessage {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+.Board_GPT_Page-Body-Form-InputMessage input {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+}
+
+.Board_GPT_Page-Body-Form-Submit {
+    border: none;
+    background-color: #000;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.message {
+    width: auto;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.message p {
+    display: inline-block;
+    text-align: right;
+    background-color: #000;
+    color: white;
+    border-radius: 20px 20px 3px 20px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.GPTmessageBox {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 20px 20px 20px 3px;
+}
+
+.GPTmessage {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'KyoboHandwriting2023wsa';
+}
+
+.select {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
+    color: #000;
+    width: 90%;
+    margin: 20px;
+}
+
+.textbox {
+    width: 400px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.message, .GPTmessage {
+    white-space: pre-wrap;
+    line-height: 1.5em;
+}
+
+.first-line {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+   

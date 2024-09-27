@@ -1,0 +1,357 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'KCC-Hanbit';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.Profile{
+    width: 100vw;
+    height: auto;
+    min-height: 100%;
+    font-family: 'KCC-Hanbit';
+}
+a{
+    text-decoration: none;
+    color: black;
+} 
+
+.Profile-Header{
+    margin-top: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Profile-Header-Wrap{
+    width: 95%;
+}
+.Profile-Header-Wrap-Content{
+    display: flex;
+}
+.Profile-Header-Wrap-Content-Image{
+    width: 40px;    
+}
+.Profile-Header-Wrap-Content-Image img{
+    width: 100%;    
+}
+.Profile-Header-Wrap-Content-UserID{
+    align-content: center;
+}
+.Profile-Header-Wrap-Content-UserID p{
+    font-size: 22px;
+    font-weight: bold;
+    color: #424242;
+}
+
+
+/* 프로필사진 & 이름 영역 */
+.Profile-Body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid gainsboro;
+}
+.Profile-Body-Wrap{
+    width: 95%;
+}
+.Profile-Body-Wrap-Top{
+    width: 100%;
+    margin-top: 20px;
+    
+}
+.Profile-Body-Wrap-Top-ImageArea{ /* 프로필사진 */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Profile-Body-Wrap-Top-ImageArea-Image{
+    width: 15%;
+    border: 3px solid black;
+    border-radius: 50%;
+    padding: 25px;
+}
+.Profile-Body-Wrap-Top-ImageArea-Image img{
+    width: 100%;
+}
+.Profile-Body-Wrap-Top-NameArea{/* 이름 */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.Profile-Body-Wrap-Top-NameArea p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* 게시물수 좋아요수 영역*/
+.Profile-Body-Wrap-Middle{
+    margin-top: 6px;
+    width: 100%;
+}
+.Profile-Body-Wrap-Middle-Imformation{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Profile-Body-Wrap-Middle-Imformation-Wrap{
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
+}
+.Profile-Body-Wrap-Middle-Imformation-Wrap-Board{/* 게시물수*/
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.Profile-Body-Wrap-Middle-Imformation-Wrap-Like{/*좋아요수*/
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* 프로필 편집 버튼 & 로그아웃 버튼*/
+.Profile-Body-Wrap-Middle-ButtonArea{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Profile-Body-Wrap-Middle-ButtonArea-Wrap{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+.Profile-Body-Wrap-Middle-ButtonArea-Wrap-ProfileEditButton{
+    border: 2px solid black;
+    border-radius: 17px;
+    width: 50%;
+    margin-right: 10px;
+    font-weight: bolder;
+}
+.Profile-Body-Wrap-Middle-ButtonArea-Wrap-ProfileEditButton:hover{
+    background-color: rgb(237, 237, 237);
+}
+.Profile-Body-Wrap-Middle-ButtonArea-Wrap a{
+    text-decoration: none;
+    color: black;
+}
+
+.Profile-Body-Wrap-Middle-ButtonArea-Wrap-LogoutButton{
+    border: 2px solid black;
+    border-radius: 17px;
+    width: 50%;
+    margin-left: 10px;
+}
+.Profile-Body-Wrap-Middle-ButtonArea-Wrap-LogoutButton:hover{
+    background-color: rgb(237, 237, 237);
+}
+
+.Profile-Body-Wrap-Middle-ButtonArea-Wrap-ProfileEditButton p, .Profile-Body-Wrap-Middle-ButtonArea-Wrap-LogoutButton p{
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* 붓 이미지 영역 (푸터)*/
+.Profile-Body-Wrap-Bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;
+}
+.Profile-Body-Wrap-Bottom-BrushImage{
+    width: 60px;
+    margin: 7px 0px;
+}
+.Profile-Body-Wrap-Bottom-BrushImage img{
+    width: 100%;
+}
+
+
+/* 내 게시물 영역*/
+.Profile-MyBoard{
+    width: 100%;
+    
+}
+
+.Profile-MyBoard-BoardList{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Profile-MyBoard-BoardList-BoardItem{
+    width: 162.665px;
+    height: 162.665px;
+    border: 2px solid gainsboro;
+}
+.Profile-MyBoard-BoardList-BoardItem:hover{
+    background-color: #e3e3e3;
+
+}
+
+.Profile-MyBoard-BoardList-BoardItem-Title{
+    height: auto;
+    width: 100%;
+}
+.Profile-MyBoard-BoardList-BoardItem-Title p{
+    font-size: 70%;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0px;
+}
+.Profile-MyBoard-BoardList-BoardItem-Content{
+    max-height: calc(100% - 42.8px);
+}
+.Profile-MyBoard-BoardList-BoardItem-Content p{
+    font-size: 50%;
+    white-space: pre-wrap;
+    text-align: center;
+    overflow: hidden;  		
+    text-overflow: ellipsis;
+    display: -webkit-box; 
+    -webkit-line-clamp:7;
+    -webkit-box-orient: vertical;
+}
+
+
+
+/* 모달 슬라이드 업 애니메이션 */
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* 모달 슬라이드 다운 애니메이션 */
+@keyframes slide-down {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* 배경 어둡게 */
+    animation: fade-in 0.3s ease-in-out; /* 페이드 인 애니메이션 */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    
+    border: 1px solid #888;
+    width: 80%; /* 모달 너비 설정 */
+    height: 100%;
+    max-width: 600px;
+    position: relative;
+    animation: slide-up 0.5s ease-in-out; /* 슬라이드 업 애니메이션 */
+    border-radius: 30px;
+}
+.modal-content-title{
+    margin-top: 30px;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.modal-content-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.modal-content-form-input{
+    
+    width: 70%;
+}
+.modal-content-form-input-Box{
+    width: 100%;
+    margin: 10px 0px;    
+}
+.modal-content-form-input-Box p{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 0px;
+}
+.modal-content-form-input-Box input{
+    width: 100%;
+    height: 40px;
+    background-color: #ededed;
+    border: 1px solid rgb(186, 186, 186) ;
+    border-radius: 8px;
+    padding-left: 5px;
+}
+.modal-content-form-submit{
+    margin-top: 35px;
+    width: 80%;
+}
+.modal-content-form-submit input{
+    font-size: 20px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 15px 0px;
+}
+
+
+.close {
+    position: absolute;
+    top: 3px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 배경 불투명도 */
+.modal-background {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal.visible {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal.visible .modal-content {
+    animation: slide-up 0.5s ease-in-out; /* 슬라이드 업 애니메이션 */
+}
+
+
+

@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+.Login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.Login-Wrap{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content:center;
+    
+}
+.Login-Wrap > div{
+    margin: 40px 0px;
+}
+
+.Login-Wrap-Logo{
+    width: 80%;
+}
+
+.Login-Wrap-Logo img{
+    width: 100%;
+}
+
+.Login-Wrap-LoginBox{
+    width: 88%;
+}
+
+.Login-Wrap-LoginBox-LoginBoxWrap{
+    background-color: #FAFAFA;
+    border: 1px solid gainsboro;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+.Login-Wrap-LoginBox-LoginBoxWrap-UserID{
+    padding: 10px;
+    align-content: center;
+
+}
+.Login-Wrap-LoginBox-LoginBoxWrap-UserID p{
+    margin: 0px;
+}
+.Login-Wrap-LoginBox-LoginBoxWrap-UserID input{
+    background-color: #FAFAFA;
+    border: none;
+    width: 100%;
+}
+.Login-Wrap-LoginBox-LoginBoxWrap-UserID input:focus{
+    outline: none;
+}
+
+.Login-Wrap-LoginBox-LoginBoxWrap-password{
+    padding: 10px;
+    align-content: center;
+
+}
+.Login-Wrap-LoginBox-LoginBoxWrap-password p{
+    margin: 0px;
+}
+.Login-Wrap-LoginBox-LoginBoxWrap-password input{
+    background-color: #FAFAFA;
+    border: none;
+    width: 100%;
+}
+.Login-Wrap-LoginBox-LoginBoxWrap-password input:focus{
+    outline: none;
+}
+
+
+.Login-Wrap-Submit{
+    background-color: black;
+    width: 95%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 13px;
+}
+
+.Login-Wrap-Submit input{
+    color: white;
+    background-color: black;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 3px 0px;
+    border: 0px;
+}
+
+.Login-Wrap-IsJoin{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    font-weight:500;
+    padding-bottom: 80px;
+}
